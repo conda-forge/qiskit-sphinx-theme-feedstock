@@ -1,0 +1,45 @@
+schema_version: 1
+
+context:
+  version: "2.1.0"
+
+package:
+  name: qiskit-sphinx-theme
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/q/qiskit-sphinx-theme/qiskit_sphinx_theme-${{ version }}.tar.gz
+  sha256: 5abd24d33dfe6488d3fc8e9e48905592b36366ad304bb3ce09c3f95b7320dfb0
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - sphinx-theme-builder >=0.2.0b2
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - docutils
+    - sphinx >=7.0,<10.0
+    - furo ==2025.12.19
+
+tests:
+  - python:
+      imports:
+        - qiskit_sphinx_theme
+      pip_check: true
+      python_version: ${{ python_min }}.*
+
+about:
+  summary: A Sphinx theme for Qiskit and Qiskit Ecosystem projects
+  license: Apache-2.0
+  license_file: LICENSE
+  homepage: https://pypi.org/project/qiskit-sphinx-theme/
+
+extra:
+  recipe-maintainers:
+    - wshanks
