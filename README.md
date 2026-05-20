@@ -3,13 +3,11 @@ About qiskit-sphinx-theme-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/qiskit-sphinx-theme-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/Qiskit/qiskit_sphinx_theme
+Home: https://pypi.org/project/qiskit-sphinx-theme/
 
 Package license: Apache-2.0
 
 Summary: A Sphinx theme for Qiskit and Qiskit Ecosystem projects
-
-Documentation: https://qisk.it/docs-guide
 
 Current build status
 ====================
