@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.1.0"
+  version: "2.1.1"
 
 package:
   name: qiskit-sphinx-theme
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/q/qiskit-sphinx-theme/qiskit_sphinx_theme-${{ version }}.tar.gz
-  sha256: 5abd24d33dfe6488d3fc8e9e48905592b36366ad304bb3ce09c3f95b7320dfb0
+  sha256: aad41382a460e004b99f9dbba59cda3d489dcff25a7f2c3f11fa3358da87c116
 
 build:
   number: 0
